@@ -9,13 +9,15 @@ document.getElementById('btn-submit').addEventListener('click', function(){
      // 3(c).get the value
      const passwordField =document.getElementById('user-password')
      const password = passwordField.value;
+     
+     window.location.href='bank.html';
      // console.log(password)
 
      // step-4-> verify the email & password
-     if(email === 'rj' && password === 'goldy'){
-          window.location.href='bank.html';
-     }else{
-          alert("Tor Id Hack - Bkash a Taka Patha Joldi");
-     }
+     // if(email === 'rj' && password === 'goldy'){
+     //      window.location.href='bank.html';
+     // }else{
+     //      alert("Tor Id Hack - Bkash a Taka Patha Joldi");
+     // }
 
 })

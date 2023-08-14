@@ -8,38 +8,42 @@
      <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="container mx-auto font-serif">
-     <header><h1 class="text-5xl text-center">Bank
-     </h1></header>
+     <header>
+          <h1 class="text-3xl md:text-5xl text-center font-extrabold mt-3 md:mt-10 mb-1 text-red-400 ">Amader-Bank
+     </h1>
+     <progress class="progress bg-purple-100 w-3/6 md:w-56 m-0 p-0 flex mx-auto"></progress>
+</header>
      <main>
-          <section class="grid grid-cols-3 gap-5 w-9/12 mx-auto mt-10">
-               <div class="bg-green-300 text-center rounded-xl text-2xl font-medium text-white py-3">
+          <section class="grid grid-cols-3 gap-5 w-9/12 mx-auto mt-8">
+               <div class="bg-gradient-to-r from-cyan-300 to-blue-500  text-center rounded-xl text-lg md:text-2xl font-medium text-white py-3">
                     <h1>Deposit</h1>
                     <p >$<span id="deposit-total">00</span></p>
                </div>
-               <div class="bg-green-300 text-center rounded-xl text-2xl font-medium text-white py-3 ">
-                    <h1>Withdraw</h1>
+               <div class="bg-gradient-to-r from-pink-500 bg-orange-400 text-center rounded-xl text-lg md:text-2xl font-medium text-white py-3">
+                    <h1 class="">Withdraw</h1>
                     <p>$<span id="wid-calculate">00</span> </p>
                </div>
-               <div class="bg-green-300 text-center rounded-xl text-2xl font-medium text-white py-3">
+               <div class="bg-gradient-to-r from-fuchsia-400 bg-red-400 text-center rounded-xl text-lg md:text-2xl font-medium text-white py-3">
                     <h1>Balance</h1>
                     <p>$<span id="balance-total">100</span> </p>
                </div>
 
           </section>
           <!-- 2nd part -->
-          <section class="grid grid-cols-2 gap-5 w-9/12 mx-auto mt-10 text-xl font-medium ">
-               <div class="bg-green-300 rounded-xl p-3 ">
-                    <h1 class="text-white">Please-Deposit</h1>
+          <section class="grid md:grid-cols-2 gap-3 md:gap-5 w-9/12 mx-auto mt-10 font-medium ">
+               <div class="bg-gradient-to-r from-green-400 to-blue-400  rounded-xl p-3 md:p-5 -mt-4 md:mt-0">
+                    <h1 class="text-white md:text-2xl text-lg mb-2">Please-Deposit-Here</h1>
 
-                    <input class=" px-3 my-3 w-9/12 block" type="email" name="" id="deposit-field" placeholder="$ Amount You Want To Deposit">
+                    <input class="md:text-1xl text-base rounded text-pink-400 px-3 mb-2 md:mb-4 mt-1 md:mt-4 w-9/12 block" type="email" name="" id="deposit-field" placeholder="$ Type here">
+                    <!-- Amount You Want To Deposit -->
 
-                    <button id="btn-deposit" class="bg-amber-400 hover:bg-violet-600 active:bg-violet-700 text-white font-medium px-4 py-1 rounded-lg">Deposit</button>
+                    <button id="btn-deposit" class="bg-amber-400 hover:bg-violet-600 active:bg-violet-700 text-white font-medium px-4 py-1 rounded-lg mt-1">Deposit</button>
                </div>
-               <div class="bg-green-300 rounded-xl p-3">
-                    <h1 class="text-white">Please-Wiredraw</h1>
-                   <input class=" px-3 w-9/12 my-3 block" type="text" id="withdraw-input-field" placeholder="$ Amount You Want To Deposit">
+               <div class="bg-gradient-to-r from-green-400 to-blue-400  rounded-xl p-3 md:p-5">
+                    <h1 class="text-white md:text-2xl text-lg mb-2">Please-Withdraw-Here</h1>
+                   <input class="md:text-1xl text-base text-pink-400 rounded px-3 mb-2 md:mb-4 mt-1 md:mt-4 w-9/12 block" type="text" id="withdraw-input-field" placeholder="$ Type here">
 
-                   <button id="btn-withdraw" class="bg-amber-400 hover:bg-violet-600 active:bg-violet-700 text-white font-medium px-4 py-1 rounded-lg">Withdraw</button>
+                   <button id="btn-withdraw" class="bg-amber-400  hover:bg-violet-600 active:bg-violet-700 text-white font-medium px-3 md:px-4 py-1 mt-1 rounded-lg">Withdraw</button>
                </div>
           </section>
 
