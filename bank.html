@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Calculation</title>
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="container mx-auto font-serif">
+     <header><h1 class="text-5xl text-center">Bank
+     </h1></header>
+     <main>
+          <section class="grid grid-cols-3 gap-5 w-9/12 mx-auto mt-10">
+               <div class="bg-green-300 text-center rounded-xl text-2xl font-medium text-white py-3">
+                    <h1>Deposit</h1>
+                    <p>$0</p>
+               </div>
+               <div class="bg-green-300 text-center rounded-xl text-2xl font-medium text-white py-3 ">
+                    <h1>Wiredraw</h1>
+                    <p>$0</p>
+               </div>
+               <div class="bg-green-300 text-center rounded-xl text-2xl font-medium text-white py-3">
+                    <h1>Balance</h1>
+                    <p>$0</p>
+               </div>
+
+          </section>
+          <!-- 2nd part -->
+          <section class="grid grid-cols-2 gap-5 w-9/12 mx-auto mt-10 text-xl font-medium ">
+               <div class="bg-green-300 rounded-xl p-3 ">
+                    <h1 class="text-white">Please-Deposit</h1>
+
+                    <input class=" px-3 my-3 w-9/12 block" type="email" name="" id="deposit-field" placeholder="$ Amount You Want To Deposit">
+
+                    <button id="btn-deposit" class="bg-amber-400 hover:bg-violet-600 active:bg-violet-700 text-white font-medium px-4 py-1 rounded-lg">Deposit</button>
+               </div>
+               <div class="bg-green-300 rounded-xl p-3">
+                    <h1 class="text-white">Please-Wiredraw</h1>
+                   <input class=" px-3 w-9/12 my-3 block" type="text" placeholder="$ Amount You Want To Deposit">
+
+                   <button id="btn-widthdraw" class="bg-amber-400 hover:bg-violet-600 active:bg-violet-700 text-white font-medium px-4 py-1 rounded-lg">Withdraw</button>
+               </div>
+          </section>
+
+          <script src="./js/bank.js"></script>
+     </main>
+</body>
+</html>

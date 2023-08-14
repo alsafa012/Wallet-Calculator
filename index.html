@@ -3,9 +3,26 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Document</title>
+     <title>Wallet-Calculator</title>
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="container mx-auto font-serif" >
+     
+     <main>
+          <section class="bg-blue-200 w-9/12 mx-auto p-8">
+              
+               <h3 class="text-3xl mb-3 font-medium ">Please Login</h3>
+               <div class="">                   
+                    <input class=" px-3 mb-3 w-9/12 block" type="email" name="" id="user-email" placeholder="your email">
+                    <input class="px-3 mb-3 w-9/12 block" type="password" name="" id="user-password" placeholder="password">
+                    <button id="btn-submit" class="bg-amber-400 hover:bg-violet-600 active:bg-violet-700 text-white font-medium px-6 py-2 rounded-lg">Submit</button>
+               </div>
+              
+
+          </section>
+          <script src="./js/styles.js"></script>
+     </main>
      
 </body>
 </html>
