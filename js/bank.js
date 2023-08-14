@@ -40,3 +40,36 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
 
 })
 
+// 
+// step-1:add event handler with the withdraw button
+document.getElementById('btn-withdraw').addEventListener('click', function(){
+     const inp = document.getElementById('withdraw-input-field');
+     const inpString = inp.value;
+     const finalInp = parseFloat(inpString);
+
+     inp.value = '';  //input field empty done by using this
+     // console.log(inpString);
+     const widPValue = document.getElementById('wid-calculate');
+     const widString = widPValue.innerText;
+     const finalWidth = parseFloat(widString);
+     // console.log('shdshd');
+     // const display = finalInp + finalWidth;
+     // widPValue.innerText = display;
+
+     const balanceDecrement = document.getElementById('balance-total')
+     const balanceString = balanceDecrement.innerText;
+     const finalBalance = parseFloat(balanceString);
+     if( finalInp > finalBalance){
+          alert('Shameless Person');
+          return;
+     }
+     const display = finalInp + finalWidth;
+     widPValue.innerText = display;
+
+     const finalBalanceDecrement = finalBalance - finalInp;
+     balanceDecrement.innerText = finalBalanceDecrement;
+
+     // inp.value = '';
+
+})
+
