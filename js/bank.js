@@ -7,6 +7,12 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
      const depositField = document.getElementById('deposit-field')
       const newDepositAmountString = depositField.value;
       const newDepositAmount = parseFloat(newDepositAmountString);
+
+      depositField.value = '';
+      if(isNaN(newDepositAmount)){
+          alert ('Please enter a valid amount');
+          return;
+      }
      // console.log(depositAmount);
      // step-3: get the current deposit total
      // for non-input use innerText to get the text
@@ -36,7 +42,7 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
      
 
      //  Final-step: set input text empty
-     depositField.value = '';
+     
 
 })
 
@@ -46,6 +52,12 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
      const inp = document.getElementById('withdraw-input-field');
      const inpString = inp.value;
      const finalInp = parseFloat(inpString);
+     inp.value ='';
+
+     if(isNaN(finalInp)){
+          alert('Please enter a valid amount');
+          return;
+     }
 
      inp.value = '';  //input field empty done by using this
      // console.log(inpString);
